@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cloud-rambler.github.io/</id>
     <title>Cloud Rambler&apos;s Blog</title>
-    <updated>2021-12-22T11:19:23.563Z</updated>
+    <updated>2021-12-22T11:32:28.519Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cloud-rambler.github.io/"/>
     <link rel="self" href="https://cloud-rambler.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://cloud-rambler.github.io/images/avatar.png</logo>
     <icon>https://cloud-rambler.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Cloud Rambler&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[NoWritablePkgsDirError: No writeable pkgs directories configured.]]></title>
+        <id>https://cloud-rambler.github.io/post/nowritablepkgsdirerror-no-writeable-pkgs-directories-configured/</id>
+        <link href="https://cloud-rambler.github.io/post/nowritablepkgsdirerror-no-writeable-pkgs-directories-configured/">
+        </link>
+        <updated>2021-12-22T11:20:11.000Z</updated>
+        <content type="html"><![CDATA[<p>进行配置conda时出现以下问题：<br>
+<img src="https://cloud-rambler.github.io//post-images/1640172228229.png" alt="" loading="lazy"><br>
+字面意思显示不可写入，以管理员权限访问即可。<br>
+<img src="https://cloud-rambler.github.io//post-images/1640172644263.png" alt="" loading="lazy"><br>
+<img src="https://cloud-rambler.github.io//post-images/1640172731028.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://cloud-rambler.github.io/post/hello-gridea/</id>

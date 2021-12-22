@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cloud-rambler.github.io/</id>
     <title>Cloud Rambler&apos;s Blog</title>
-    <updated>2021-12-22T11:32:28.519Z</updated>
+    <updated>2021-12-22T11:39:59.476Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cloud-rambler.github.io/"/>
     <link rel="self" href="https://cloud-rambler.github.io/atom.xml"/>
@@ -10,6 +10,47 @@
     <logo>https://cloud-rambler.github.io/images/avatar.png</logo>
     <icon>https://cloud-rambler.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Cloud Rambler&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[conda创建环境文件夹设置为D盘，解放C盘空间]]></title>
+        <id>https://cloud-rambler.github.io/post/conda-chuang-jian-huan-jing-wen-jian-jia-she-zhi-wei-d-pan-jie-fang-c-pan-kong-jian/</id>
+        <link href="https://cloud-rambler.github.io/post/conda-chuang-jian-huan-jing-wen-jian-jia-she-zhi-wei-d-pan-jie-fang-c-pan-kong-jian/">
+        </link>
+        <updated>2021-12-22T11:32:48.000Z</updated>
+        <content type="html"><![CDATA[<p>今天在使用conda创建环境时，发现只能默认创建环境到C盘里，于是经过一番搜寻将环境文件夹设置到了D盘。</p>
+<ul>
+<li>输入conda env<br>
+<img src="https://cloud-rambler.github.io//post-images/1640173089317.png" alt="" loading="lazy">
+<blockquote>
+<p>以上图片中为设置好的</p>
+</blockquote>
+</li>
+<li>修改.condarc 文件<br>
+channels:
+<ul>
+<li>defaults<br>
+show_channel_urls: true<br>
+default_channels:</li>
+<li>https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</li>
+<li>https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</li>
+<li>https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2<br>
+custom_channels:<br>
+conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+envs_dirs:</li>
+<li>D:\program\Anaconda\envs<br>
+pkgs_dirs:</li>
+<li>D:\program\Anaconda\pkgs</li>
+</ul>
+</li>
+<li>输入conda init 初始化即可创建到D盘指定文件夹</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NoWritablePkgsDirError: No writeable pkgs directories configured.]]></title>
         <id>https://cloud-rambler.github.io/post/nowritablepkgsdirerror-no-writeable-pkgs-directories-configured/</id>

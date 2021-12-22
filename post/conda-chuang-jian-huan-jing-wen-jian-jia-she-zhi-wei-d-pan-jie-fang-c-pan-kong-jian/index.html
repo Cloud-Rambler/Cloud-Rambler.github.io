@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>关于 | Cloud Rambler&#39;s Blog</title>
+<title>conda创建环境文件夹设置为D盘，解放C盘空间 | Cloud Rambler&#39;s Blog</title>
 
 <link rel="shortcut icon" href="https://cloud-rambler.github.io//favicon.ico?v=1640173194357">
 
@@ -101,31 +101,60 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    关于
+                    conda创建环境文件夹设置为D盘，解放C盘空间
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2019-01-25 ·
+                        · 2021-12-22 ·
                     </time>
                     
                 </div>
                 <div class="post-content">
-                    <blockquote>
-<p>欢迎来到我的博客呀，很高兴遇见你！🤝</p>
+                    <p>今天在使用conda创建环境时，发现只能默认创建环境到C盘里，于是经过一番搜寻将环境文件夹设置到了D盘。</p>
+<ul>
+<li>输入conda env<br>
+<img src="https://cloud-rambler.github.io//post-images/1640173089317.png" alt="" loading="lazy">
+<blockquote>
+<p>以上图片中为设置好的</p>
 </blockquote>
-<h2 id="关于博客">🏠 关于博客</h2>
-<p>这个博客主要记录一下学习过程中遇到的问题以及分享点经历。</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>一名Postgraduate。</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>电影、羽毛球以及骑行！</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>有问题可以给我发邮件：wrbwryone@gmail.com</p>
+</li>
+<li>修改.condarc 文件<br>
+channels:
+<ul>
+<li>defaults<br>
+show_channel_urls: true<br>
+default_channels:</li>
+<li>https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</li>
+<li>https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</li>
+<li>https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2<br>
+custom_channels:<br>
+conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud<br>
+envs_dirs:</li>
+<li>D:\program\Anaconda\envs<br>
+pkgs_dirs:</li>
+<li>D:\program\Anaconda\pkgs</li>
+</ul>
+</li>
+<li>输入conda init 初始化即可创建到D盘指定文件夹</li>
+</ul>
 
                 </div>
             </article>
         </div>
 
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://cloud-rambler.github.io/post/nowritablepkgsdirerror-no-writeable-pkgs-directories-configured/" class="post-title gt-a-link">
+                    NoWritablePkgsDirError: No writeable pkgs directories configured.
+                </a>
+            </div>
         
 
         

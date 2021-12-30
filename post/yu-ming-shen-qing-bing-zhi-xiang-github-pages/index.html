@@ -1,0 +1,224 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>域名申请并指向GitHub Pages | Cloud Rambler&#39;s Blog</title>
+
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1640832551706">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Cloud Rambler&#39;s Blog
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1640832551706"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    域名申请并指向GitHub Pages
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-12-27 ·
+                    </time>
+                    
+                        <a href="http://localhost:4000/tag/dMp9-boHa/" class="post-tags">
+                            # GitHub
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>GitHub有一个很好用的免费功能：<strong>GitHub Pages</strong>，你可以使用该功能创建自己的网站，网址默认为 <code>用户名.github.io</code> ，GitHub pages还提供域名指定方式，来指定自己的域名。以下记录一下域名申请以及指向GitHub Pages的步骤。</p>
+<h2 id="1-域名申请">1、域名申请</h2>
+<p>域名的申请需要找域名供应商，这里我选择了阿里云的万网平台来申请域名（<a href="https://wanwang.aliyun.com/domain/">万网</a>）：<br>
+<img src="http://localhost:4000/post-images/1640584762087.png" alt="" loading="lazy"></p>
+<h3 id="11-域名挑选">1.1、域名挑选</h3>
+<p>域名的种类有很多，例如.com，.cn等，这里我选择了.top申请了一个名为cloud-rambler.top的域名。附上各种域名价格表：<img src="http://localhost:4000/post-images/1640583602601.png" alt="" loading="lazy"><br>
+更多信息可以访问这个网址：<a href="https://wanwang.aliyun.com/help/price.html?spm=5176.8048432.308878.29.1db62cf8E3jSwb">产品价格总览</a></p>
+<h3 id="12-购买域名">1.2、购买域名</h3>
+<p>首先进行域名的查询，如图：<br>
+<img src="http://localhost:4000/post-images/1640583899767.png" alt="" loading="lazy"><br>
+查询到可以注册的域名之后加入到购物清单，之后进行结算即可，额外业务无需添加也可以使用。<br>
+<img src="http://localhost:4000/post-images/1640583934706.png" alt="" loading="lazy"><br>
+这里有个比较关键的一步，就是需要进行信息模板的填写，主要填写信息如图所示，需要进行邮箱的验证以及实名验证。<br>
+<img src="http://localhost:4000/post-images/1640583975700.png" alt="" loading="lazy"></p>
+<h2 id="2-指向github-pages">2、指向GitHub Pages</h2>
+<p>申请并购买域名之后即可进行域名的指定，首先需要获取到GitHub的IP地址，在命令提示符里输入ping 用户名.github.io，红色框里的即为IP地址：<br>
+<img src="http://localhost:4000/post-images/1640584241149.png" alt="" loading="lazy"></p>
+<p>点击解析</p>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1640584349080.png" alt="" loading="lazy"></figure>
+<p>添加如下内容：</p>
+<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1640584371875.png" alt="" loading="lazy"></figure>
+<p>在GitHub Pages的项目即<code>名字.github.io</code>里添加域名即可：</p>
+<figure data-type="image" tabindex="3"><img src="http://localhost:4000/post-images/1640584461496.png" alt="" loading="lazy"></figure>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="http://localhost:4000/post/conda-chuang-jian-huan-jing-wen-jian-jia-she-zhi-wei-d-pan-jie-fang-c-pan-kong-jian/" class="post-title gt-a-link">
+                    conda创建环境文件夹设置为D盘，解放C盘空间
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: '',
+		appKey: '',
+		avatar: '',
+		pageSize: 5,
+		recordIp: false,
+		placeholder: 'Just Go Go',
+		visitor: false,
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">A lot can happen between now and never! </div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/cloud-rambler" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="http://localhost:4000/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.highlightAll()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

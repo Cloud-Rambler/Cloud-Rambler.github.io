@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://cloud-rambler.github.io/</id>
     <title>Cloud Rambler&apos;s Blog</title>
-    <updated>2021-12-30T06:36:11.398Z</updated>
+    <updated>2021-12-30T06:53:04.204Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://cloud-rambler.github.io/"/>
+    <link rel="self" href="https://cloud-rambler.github.io/atom.xml"/>
     <subtitle>A lot can happen between now and never! </subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://cloud-rambler.github.io/images/avatar.png</logo>
+    <icon>https://cloud-rambler.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Cloud Rambler&apos;s Blog</rights>
     <entry>
         <title type="html"><![CDATA[域名申请并指向GitHub Pages]]></title>
-        <id>http://localhost:4000/post/yu-ming-shen-qing-bing-zhi-xiang-github-pages/</id>
-        <link href="http://localhost:4000/post/yu-ming-shen-qing-bing-zhi-xiang-github-pages/">
+        <id>https://cloud-rambler.github.io/post/yu-ming-shen-qing-bing-zhi-xiang-github-pages/</id>
+        <link href="https://cloud-rambler.github.io/post/yu-ming-shen-qing-bing-zhi-xiang-github-pages/">
         </link>
         <updated>2021-12-27T05:31:41.000Z</updated>
         <content type="html"><![CDATA[<p>GitHub有一个很好用的免费功能：<strong>GitHub Pages</strong>，你可以使用该功能创建自己的网站，网址默认为 <code>用户名.github.io</code> ，GitHub pages还提供域名指定方式，来指定自己的域名。以下记录一下域名申请以及指向GitHub Pages的步骤。</p>
 <h2 id="1-域名申请">1、域名申请</h2>
 <p>域名的申请需要找域名供应商，这里我选择了阿里云的万网平台来申请域名（<a href="https://wanwang.aliyun.com/domain/">万网</a>）：<br>
-<img src="http://localhost:4000/post-images/1640584762087.png" alt="" loading="lazy"></p>
+<img src="https://cloud-rambler.github.io//post-images/1640584762087.png" alt="" loading="lazy"></p>
 <h3 id="11-域名挑选">1.1、域名挑选</h3>
-<p>域名的种类有很多，例如.com，.cn等，这里我选择了.top申请了一个名为cloud-rambler.top的域名。附上各种域名价格表：<img src="http://localhost:4000/post-images/1640583602601.png" alt="" loading="lazy"><br>
+<p>域名的种类有很多，例如.com，.cn等，这里我选择了.top申请了一个名为cloud-rambler.top的域名。附上各种域名价格表：<img src="https://cloud-rambler.github.io//post-images/1640583602601.png" alt="" loading="lazy"><br>
 更多信息可以访问这个网址：<a href="https://wanwang.aliyun.com/help/price.html?spm=5176.8048432.308878.29.1db62cf8E3jSwb">产品价格总览</a></p>
 <h3 id="12-购买域名">1.2、购买域名</h3>
 <p>首先进行域名的查询，如图：<br>
-<img src="http://localhost:4000/post-images/1640583899767.png" alt="" loading="lazy"><br>
+<img src="https://cloud-rambler.github.io//post-images/1640583899767.png" alt="" loading="lazy"><br>
 查询到可以注册的域名之后加入到购物清单，之后进行结算即可，额外业务无需添加也可以使用。<br>
-<img src="http://localhost:4000/post-images/1640583934706.png" alt="" loading="lazy"><br>
+<img src="https://cloud-rambler.github.io//post-images/1640583934706.png" alt="" loading="lazy"><br>
 这里有个比较关键的一步，就是需要进行信息模板的填写，主要填写信息如图所示，需要进行邮箱的验证以及实名验证。<br>
-<img src="http://localhost:4000/post-images/1640583975700.png" alt="" loading="lazy"></p>
+<img src="https://cloud-rambler.github.io//post-images/1640583975700.png" alt="" loading="lazy"></p>
 <h2 id="2-指向github-pages">2、指向GitHub Pages</h2>
 <p>申请并购买域名之后即可进行域名的指定，首先需要获取到GitHub的IP地址，在命令提示符里输入ping 用户名.github.io，红色框里的即为IP地址：<br>
-<img src="http://localhost:4000/post-images/1640584241149.png" alt="" loading="lazy"></p>
+<img src="https://cloud-rambler.github.io//post-images/1640584241149.png" alt="" loading="lazy"></p>
 <p>点击解析</p>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1640584349080.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://cloud-rambler.github.io//post-images/1640584349080.png" alt="" loading="lazy"></figure>
 <p>添加如下内容：</p>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1640584371875.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://cloud-rambler.github.io//post-images/1640584371875.png" alt="" loading="lazy"></figure>
 <p>在GitHub Pages的项目即<code>名字.github.io</code>里添加域名即可：</p>
-<figure data-type="image" tabindex="3"><img src="http://localhost:4000/post-images/1640584461496.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://cloud-rambler.github.io//post-images/1640584461496.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[conda创建环境文件夹设置为D盘，解放C盘空间]]></title>
-        <id>http://localhost:4000/post/conda-chuang-jian-huan-jing-wen-jian-jia-she-zhi-wei-d-pan-jie-fang-c-pan-kong-jian/</id>
-        <link href="http://localhost:4000/post/conda-chuang-jian-huan-jing-wen-jian-jia-she-zhi-wei-d-pan-jie-fang-c-pan-kong-jian/">
+        <id>https://cloud-rambler.github.io/post/conda-chuang-jian-huan-jing-wen-jian-jia-she-zhi-wei-d-pan-jie-fang-c-pan-kong-jian/</id>
+        <link href="https://cloud-rambler.github.io/post/conda-chuang-jian-huan-jing-wen-jian-jia-she-zhi-wei-d-pan-jie-fang-c-pan-kong-jian/">
         </link>
         <updated>2021-12-22T11:32:48.000Z</updated>
         <content type="html"><![CDATA[<p>今天在使用conda创建环境时，发现只能默认创建环境到C盘里，于是经过一番搜寻将环境文件夹设置到了D盘。</p>
 <ul>
 <li>输入conda env<br>
-<img src="http://localhost:4000/post-images/1640173089317.png" alt="" loading="lazy">
+<img src="https://cloud-rambler.github.io//post-images/1640173089317.png" alt="" loading="lazy">
 <blockquote>
 <p>以上图片中为设置好的</p>
 </blockquote>
@@ -84,21 +84,21 @@ pkgs_dirs:</li>
     </entry>
     <entry>
         <title type="html"><![CDATA[NoWritablePkgsDirError: No writeable pkgs directories configured.]]></title>
-        <id>http://localhost:4000/post/nowritablepkgsdirerror-no-writeable-pkgs-directories-configured/</id>
-        <link href="http://localhost:4000/post/nowritablepkgsdirerror-no-writeable-pkgs-directories-configured/">
+        <id>https://cloud-rambler.github.io/post/nowritablepkgsdirerror-no-writeable-pkgs-directories-configured/</id>
+        <link href="https://cloud-rambler.github.io/post/nowritablepkgsdirerror-no-writeable-pkgs-directories-configured/">
         </link>
         <updated>2021-12-22T11:20:11.000Z</updated>
         <content type="html"><![CDATA[<p>进行配置conda时出现以下问题：<br>
-<img src="http://localhost:4000/post-images/1640172228229.png" alt="" loading="lazy"><br>
+<img src="https://cloud-rambler.github.io//post-images/1640172228229.png" alt="" loading="lazy"><br>
 字面意思显示不可写入，以管理员权限访问即可。<br>
-<img src="http://localhost:4000/post-images/1640172644263.png" alt="" loading="lazy"><br>
-<img src="http://localhost:4000/post-images/1640172731028.png" alt="" loading="lazy"></p>
+<img src="https://cloud-rambler.github.io//post-images/1640172644263.png" alt="" loading="lazy"><br>
+<img src="https://cloud-rambler.github.io//post-images/1640172731028.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于]]></title>
-        <id>http://localhost:4000/post/about/</id>
-        <link href="http://localhost:4000/post/about/">
+        <id>https://cloud-rambler.github.io/post/about/</id>
+        <link href="https://cloud-rambler.github.io/post/about/">
         </link>
         <updated>2019-01-25T11:09:48.000Z</updated>
         <content type="html"><![CDATA[<blockquote>

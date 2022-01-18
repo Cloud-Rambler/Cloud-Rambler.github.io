@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cloud-rambler.github.io/</id>
     <title>Cloud Rambler&apos;s Blog</title>
-    <updated>2022-01-18T03:35:01.484Z</updated>
+    <updated>2022-01-18T08:45:01.375Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cloud-rambler.github.io/"/>
     <link rel="self" href="https://cloud-rambler.github.io/atom.xml"/>
@@ -16,17 +16,17 @@
         <link href="https://cloud-rambler.github.io/post/shi-yong-vscode-jin-xing-python-xiang-mu-debug/">
         </link>
         <updated>2022-01-17T12:41:39.000Z</updated>
-        <content type="html"><![CDATA[<p>#1、配置和运行debugger<br>
-##1.1、打断点<br>
-点击行号旁边的边栏或者在鼠标所在行点击F9<br>
-##1.2、初始化debugger<br>
-点击F5初始化debugger，第一次会出现一个配置菜单用于选择debug配置;也可以通过点击<strong>Debug Python File in Terminal</strong>来启动debugger</p>
+        <content type="html"><![CDATA[<h1 id="1-配置和运行debugger">1、配置和运行debugger</h1>
+<h2 id="11-打断点">1.1、打断点</h2>
+<p>点击行号旁边的边栏或者在鼠标所在行点击F9</p>
+<h2 id="12-初始化debugger">1.2、初始化debugger</h2>
+<p>点击F5初始化debugger，第一次会出现一个配置菜单用于选择debug配置;也可以通过点击<strong>Debug Python File in Terminal</strong>来启动debugger</p>
 <blockquote>
 <p><code>launch.json</code>是包含debugging的默认文件，debug toolbar如下图所示，从左到右依次为继续 (<code>F5</code>), 跳过(<code>F10</code>), 进入(<code>F11</code>), 暂时跳过(<code>Shift+F11</code>), 重新开始 (<code>Ctrl+Shift+F5</code>), and 停止(<code>Shift+F5</code>).<br>
 <img src="https://code.visualstudio.com/assets/docs/python/tutorial/debug-toolbar.png" alt="debug-toolbar" loading="lazy"></p>
 </blockquote>
-<p>##1.3、进行debugger<br>
-可以使用Logpoints在控制台输出打印信息并且不会停止运行程序。<br>
+<h2 id="13-进行debugger">1.3、进行debugger</h2>
+<p>可以使用Logpoints在控制台输出打印信息并且不会停止运行程序。<br>
 <img src="https://code.visualstudio.com/assets/docs/editor/debugging/log-points.gif" alt="Logpoints" loading="lazy"></p>
 ]]></content>
     </entry>
